@@ -4,10 +4,11 @@ import { ReactComponent as Hand } from '../../assets/hand.svg';
 const Data = () => {
   return (
     <div className="home__data">
-        <h1 className="home__title">Victor Galletti</h1>
+        <h1 className="home__title">Victor Galletti
         <Hand />
+        </h1>
         <h3 className="home__subtitle">Full Stack</h3>
-        <p className="home__description">I'm ... ... ... create phrase</p>
+        <p className="home__description">I'm Full Stack Developer with a solid background in computer networks, delivering end-to-end solutions with a focus on reliability and efficiency.</p>
 
         <a href="#contact" className="button button--flex">Say Hello 
         <svg
