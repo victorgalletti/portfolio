@@ -1,3 +1,7 @@
+:root {
+  --profile-image: url('../../assets/profile2.png');
+}
+
 .home__container {
   row-gap: 7rem;
 }
@@ -59,7 +63,7 @@
 }
 
 .home__img {
-  background: url(../../assets//profile2.PNG);
+  background-image: url(../../assets/profile2.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -69,6 +73,10 @@
   width: 300px;
   height: 300px;
   animation: profile__animate 8s ease-in-out infinite 1s;
+}
+
+.dark .home__img {
+  background-image: url('../../assets/profile.png'); /* escuro */
 }
 
 @keyframes profile__animate {

@@ -12,8 +12,12 @@
   --title-color: hsl(var(--hue), var(--sat), 20%);
   --title-color-dark: hsl(var(--hue), var(--sat), 0%);
   --text-color: hsl(var(--hue), var(--sat), 46%);
-  --body-color: hsl(var(--hue), var(--sat), 98%);
+  /* --body-color: hsl(42, 33%, 95%); */
+  --body-color: #f7f7ea;
   --container-color: #fff;
+
+  /*Color mode HSL(blackmode)*/
+  /* Line 175 */
 
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
@@ -168,6 +172,19 @@ img {
   display: inline-flex;
   align-items: center;
 }
+
+/* Color mode HSL(blackmode) */
+.dark {
+  --hue: 240; 
+  --sat: 5%; 
+  --title-color: hsl(var(--hue), 0%, 94%); 
+  --title-color-dark: hsl(var(--hue), 0%, 100%); 
+  --text-color: hsl(0, 0%, 94%); 
+  --body-color: hsl(var(--hue), var(--sat), 10%); 
+  --container-color: hsl(var(--hue), var(--sat), 16%); 
+  --green-color: hsl(129, 57%, 83%);
+}
+
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */

@@ -42,11 +42,88 @@
     display: none;
 }
 
+/* =============== THEME SWITCHER BUTTON =============== */
+.theme-switcher {
+  display: flex; 
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+/* Esconde o checkbox real */
+.theme-switcher__input {
+  display: none;
+}
+
+/* O trilho (a base do botão) */
+.theme-switcher__slider {
+  position: relative;
+  width: 45px; /* Largura do trilho */
+  height: 21px; /* Altura do trilho */
+  background-color: #f9e8b0; 
+  border-radius: 25px;
+  border: 1.3px solid var(--text-color);
+  transition: background-color 0.2s ease;
+}
+
+/* O círculo que desliza (polegar) */
+.theme-switcher__thumb {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 19px; /* Diâmetro do círculo */
+  height: 19px;
+  background-color: #f1c037; 
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilo para o ícone SVG dentro do círculo */
+.theme-switcher__thumb svg {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  transition: fill 0.2s ease;
+}
+
+/* Lógica de movimento: quando o input está checado (dark mode) */
+.theme-switcher__input:checked + .theme-switcher__slider .theme-switcher__thumb {
+  transform: translateY(-50%) translateX(24px); 
+  background-color: #24aeed;
+}
+
+/* Se quiser mudar a cor de fundo do trilho no modo escuro */
+.theme-switcher__input:checked + .theme-switcher__slider {
+   background-color: #082d3f;
+   border-color: var(--title-color);
+}
+
+.theme-switcher__input:checked + .theme-switcher__slider .theme-switcher__thumb svg {
+    color: #fff;
+}
+
+.theme-switcher-desktop {
+    display: flex; 
+}
+
+.theme-switcher-mobile {
+    display: none;
+}
+
 /*============ BREAKPOINTS =============*/
 /*Active link*/
 .active-link,
 .nav__link:hover{
     color: var(--title-color-dark);
+}
+
+/*Active link (dark)*/
+
+.dark .active-link, .nav__link:hover {
+    color: var(--green-color);
 }
 
 /* For medium devices */
@@ -109,6 +186,14 @@
     .nav__close,
     .nav__toggle {
         display: block;
+    }
+
+    .theme-switcher-mobile {
+        display: flex;
+    }
+
+    .nav__item-switcher {
+        display: none;
     }
 }
 
