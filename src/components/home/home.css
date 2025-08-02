@@ -1,7 +1,3 @@
-:root {
-  --profile-image: url('../../assets/profile2.png');
-}
-
 .home__container {
   row-gap: 7rem;
 }
@@ -63,7 +59,7 @@
 }
 
 .home__img {
-  background-image: url(../../assets/profile2.png);
+  background-image: url('../../assets/profiledark.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
