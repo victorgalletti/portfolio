@@ -8,7 +8,7 @@ const Data = () => {
         <Hand />
         </h1>
         <h3 className="home__subtitle">Full Stack</h3>
-        <p className="home__description">I'm Full Stack Developer with a solid background in computer networks, delivering end-to-end solutions with a focus on reliability and efficiency.</p>
+        <p className="home__description">I'm Full Stack Developer with a background in computer networks, delivering end-to-end solutions with a focus on reliability and efficiency.</p>
 
         <a href="#contact" className="button button--flex">Say Hello 
         <svg

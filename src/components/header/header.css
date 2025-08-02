@@ -105,11 +105,29 @@
     color: #fff;
 }
 
+/*
+=============================================
+  MOBILE CONTROLS CONTAINER
+=============================================
+*/
+
+.mobile-controls__container {
+    display: none;
+}
+
 .theme-switcher-desktop {
     display: flex; 
 }
 
 .theme-switcher-mobile {
+    display: none;
+}
+
+.language-switcher-desktop {
+    display: flex;
+}
+
+.language-switcher-mobile {
     display: none;
 }
 
@@ -188,12 +206,31 @@
         display: block;
     }
 
+    /*
+    =============================================
+        MOBILE CONTROLS CONTAINER
+    =============================================
+    */
+
     .theme-switcher-mobile {
         display: flex;
     }
 
     .nav__item-switcher {
         display: none;
+    }
+
+    .language-switcher-mobile {
+        display: flex;
+    }
+
+    .mobile-controls__container {
+        display: flex;
+        gap: 1rem; 
+        position: absolute; 
+        top: 1rem;       /* 1rem do topo */
+        right: 1.5rem;   /* 1.5rem da direita */
+        z-index: var(--z-fixed); /* Garante que fique acima de outros elementos */
     }
 }
 

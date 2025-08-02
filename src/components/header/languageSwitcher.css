@@ -1,0 +1,90 @@
+/* Container principal */
+.language-switcher {
+    position: relative;
+}
+
+/* Botão principal */
+.language-switcher-button {
+    display: flex;
+    align-items: center;
+    background-color: #f9e8b0;
+    border: 1.3px solid var(--text-color); 
+    border-radius: 25px; 
+    padding: 0 8px; 
+    width: 45px;
+    height: 21px; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.language-switcher-button img {
+    width: 100%;
+    height: 100%;
+    transform: translateX(-40%);
+    transition: fill 0.2s ease;
+}
+
+.language-switcher-button:hover {
+    border-color: var(--title-color-dark);
+}
+
+/* Dropdown */
+.language-switcher-dropdown {
+    position: absolute;
+    top: 120%; /* Posição um pouco abaixo do botão */
+    right: 0;
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 8px;
+    margin: 0;
+    width: 150px; /* Largura do menu */
+    z-index: var(--z-tooltip);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+}
+
+/* ... (O restante do CSS que enviei antes pode continuar aqui, como .open, .language-switcher-item, etc.) ... */
+.language-switcher-dropdown.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.language-switcher-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+}
+
+.language-switcher-item:hover {
+    background-color: var(--body-color);
+}
+
+.language-switcher-item span {
+    margin-left: 10px;
+    color: var(--text-color);
+    font-size: var(--small-font-size);
+}
+
+.arrow-icon {
+    transition: transform 0.3s ease;
+    color: var(--text-color);
+}
+
+.arrow-icon.open {
+    transform: rotate(180deg);
+}
+
+/* No modo escuro, a borda do botão também muda para combinar */
+.dark .language-switcher-button {
+    border-color: var(--title-color);
+    background-color: #082d3f;
+}

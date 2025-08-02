@@ -71,7 +71,7 @@
 
     .about__img {
         width: 220px;
-        justify-self: right;
+        justify-self: center;
     }
 
     .about__box {
@@ -80,6 +80,7 @@
 
     .about__data {
         text-align: center;
+        margin: 0 2rem;
     }
 
     .about__info {
