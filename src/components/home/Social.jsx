@@ -8,11 +8,11 @@ const Social = () => {
             <LRounded/>
         </a>
 
-        <a href="" className="home__social-icon" target="_blank">
+        <a href="#contact" className="home__social-icon" target="_blank">
             <Gmail/>
         </a>
 
-        <a href="" className="home__social-icon" target="_blank">
+        <a href="https://github.com/victorgalletti" className="home__social-icon" target="_blank">
             <GitHub/>
         </a>
     </div>

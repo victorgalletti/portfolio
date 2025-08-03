@@ -6,5 +6,35 @@
     "services": "Serviços",
     "portfolio": "Portfólio",
     "contact": "Contato"
+  },
+
+  "data":{
+    "description": "Sou um desenvolvedor full stack com conhecimento em redes de computadores, entregando soluções completas com foco em confiabilidade e eficiência.",
+    "talk": "Fale Comigo"
+  },
+
+  "scroll":{
+    "down": "Rode para baixo"
+  },
+
+  "about":{
+    "title": "Sobre Mim",
+    "subtitle": "Introdução",
+    "description": "Desenvolvedor Full Stack com conhecimento em redes de computadores e experiência prática em JavaScript, TypeScript e React. Apaixonado por tecnologia, pronto para novos desafios!"
+  },
+
+  "info": {
+    "experience": {
+      "title": "Experiência",
+      "subtitle": "2 Anos de Trabalhos"
+    },
+    "completed": {
+      "title": "Finalizados",
+      "subtitle": "3 Projetos"
+    },
+    "support": {
+      "title": "Suporte",
+      "subtitle": "Disponível 24/7"
+    }
   }
 }

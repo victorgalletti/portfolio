@@ -6,5 +6,35 @@
     "services": "Services",
     "portfolio": "Portfolio",
     "contact": "Contact"
+  },
+
+  "data":{
+    "description": "I'm Full Stack Developer with a background in computer networks, delivering end-to-end solutions with a focus on reliability and efficiency.",
+    "talk": "Say Hello"
+  },
+
+  "scroll":{
+    "down": "Scroll Down"
+  },
+
+  "about":{
+    "title": "About Me",
+    "subtitle": "My Introduction",
+    "description": "Full Stack developer with knowledge of computer networks and practical experience in JavaScript, TypeScript, and React. Passionate about technology and ready for new challenges!"
+  },
+
+  "info": {
+    "experience": {
+      "title": "Experience",
+      "subtitle": "2 Years Working"
+    },
+    "completed": {
+      "title": "Completed",
+      "subtitle": "3 Projects"
+    },
+    "support": {
+      "title": "Support",
+      "subtitle": "Online 24/7"
+    }
   }
 }

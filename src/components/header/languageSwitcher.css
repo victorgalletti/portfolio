@@ -20,7 +20,7 @@
 .language-switcher-button img {
     width: 100%;
     height: 100%;
-    transform: translateX(-40%);
+    transform: translateX(-42%);
     transition: fill 0.2s ease;
 }
 

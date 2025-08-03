@@ -1,16 +1,18 @@
 import React from 'react'
 import { ReactComponent as Hand } from '../../assets/hand.svg';
+import { useTranslation } from 'react-i18next'; 
 
 const Data = () => {
+const { t } = useTranslation();
   return (
     <div className="home__data">
         <h1 className="home__title">Victor Galletti
         <Hand />
         </h1>
         <h3 className="home__subtitle">Full Stack</h3>
-        <p className="home__description">I'm Full Stack Developer with a background in computer networks, delivering end-to-end solutions with a focus on reliability and efficiency.</p>
+        <p className="home__description">{t('data.description')}</p>
 
-        <a href="#contact" className="button button--flex">Say Hello 
+        <a href="#contact" className="button button--flex">{t('data.talk')} 
         <svg
             class="button__icon"
             xmlns="http://www.w3.org/2000/svg"

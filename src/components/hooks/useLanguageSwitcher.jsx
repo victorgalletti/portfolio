@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 const useLanguageSwitcher = () => {
-    const [language, setLanguage] = useState('pt');
+    const [language, setLanguage] = useState('us');
 
     useEffect(() => {
         const userPref = window.localStorage.getItem('language');
