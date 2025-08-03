@@ -175,16 +175,15 @@ img {
 
 /* Color mode HSL(blackmode) */
 .dark {
-  --hue: 240; 
-  --sat: 5%; 
-  --title-color: hsl(var(--hue), 0%, 94%); 
-  --title-color-dark: hsl(var(--hue), 0%, 100%); 
-  --text-color: hsl(0, 0%, 94%); 
-  --body-color: hsl(var(--hue), var(--sat), 10%); 
-  --container-color: hsl(var(--hue), var(--sat), 16%); 
+  --hue: 240;
+  --sat: 5%;
+  --title-color: hsl(var(--hue), 0%, 94%);
+  --title-color-dark: hsl(var(--hue), 0%, 100%);
+  --text-color: hsl(0, 0%, 94%);
+  --body-color: hsl(var(--hue), var(--sat), 10%);
+  --container-color: hsl(var(--hue), var(--sat), 16%);
   --green-color: hsl(129, 57%, 83%);
 }
-
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */

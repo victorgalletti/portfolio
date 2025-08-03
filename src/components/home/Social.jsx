@@ -1,20 +1,24 @@
-import React from 'react';
-import { Gmail, LRounded, GitHub } from '../icons/Icons';
+import React from "react";
+import { Gmail, LRounded, GitHub } from "../icons/Icons";
 
 const Social = () => {
   return (
     <div className="home__social">
-        <a href="" className="home__social-icon" target="_blank">
-            <LRounded/>
-        </a>
+      <a href="" className="home__social-icon" target="_blank">
+        <LRounded />
+      </a>
 
-        <a href="#contact" className="home__social-icon" target="_blank">
-            <Gmail/>
-        </a>
+      <a href="#contact" className="home__social-icon">
+        <Gmail />
+      </a>
 
-        <a href="https://github.com/victorgalletti" className="home__social-icon" target="_blank">
-            <GitHub/>
-        </a>
+      <a
+        href="https://github.com/victorgalletti"
+        className="home__social-icon"
+        target="_blank"
+      >
+        <GitHub />
+      </a>
     </div>
   );
 };

@@ -1,45 +1,50 @@
-import React from 'react'
-import LRoundedImg from '../../assets/icons/001-linkedin.png'
-import LSquareImg from '../../assets/icons/002-linkedin-1.png'
-import LSquareBlackImg from '../../assets/icons/003-logotipo-do-linkedin.png'
-import LRoundedBlackImg from '../../assets/icons/004-linkedin-2.png'
-import GmailImg from '../../assets/icons/005-gmail.png'
-import GmailAltImg from '../../assets/icons/006-gmail-1.png'
-import GitHubImg from '../../assets/icons/007-github.png'
-import GitHubAltImg from '../../assets/icons/008-github-1.png'
-
+import React from "react";
+import LRoundedImg from "../../assets/icons/001-linkedin.png";
+import LSquareImg from "../../assets/icons/001-business.png";
+import LSquareBlackImg from "../../assets/icons/0-linkedin.png";
+import LRoundedBlackImg from "../../assets/icons/004-linkedin-2.png";
+import GmailImg from "../../assets/icons/005-gmail.png";
+import GmailAltImg from "../../assets/icons/002-gmail.png";
+import GitHubImg from "../../assets/icons/007-github.png";
+import GitHubAltImg from "../../assets/icons/008-github-1.png";
 
 export const LRounded = () => {
-  return <img src={LRoundedImg} alt="Linkedin Rounded" width={20} height={20}/>;
-}
+  return (
+    <img src={LRoundedImg} alt="Linkedin Rounded" width={20} height={20} />
+  );
+};
 
 export const LSquare = () => {
   return <img src={LSquareImg} alt="Linkedin Square" />;
-}
+};
 
 export const LSquareBlack = () => {
   return <img src={LSquareBlackImg} alt="Linkedin Square Black" />;
-}
+};
 
 export const LRoundedBlack = () => {
   return <img src={LRoundedBlackImg} alt="Linkedin Rounded Black" />;
-}
+};
 
 export const Gmail = () => {
-  return <img src={GmailImg} alt="Gmail" width={20} height={20}/>;
-}
+  return <img src={GmailImg} alt="Gmail" width={20} height={20} />;
+};
+
+export const Gmail32 = () => {
+  return <img src={GmailImg} alt="Gmail" />;
+};
 
 export const GmailAlt = () => {
   return <img src={GmailAltImg} alt="Gmail Alternative" />;
-}
+};
 
 export const GitHub = () => {
-  return <img src={GitHubImg} alt="GitHub" width={20} height={20}/>;
-}
+  return <img src={GitHubImg} alt="GitHub" width={20} height={20} />;
+};
 
 export const GitHubAlt = () => {
   return <img src={GitHubAltImg} alt="GitHub Alternative" />;
-}
+};
 
 export const SunIcon = ({ className, ...rest }) => (
   <svg

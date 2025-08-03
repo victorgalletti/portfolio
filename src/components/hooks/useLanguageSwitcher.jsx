@@ -1,26 +1,26 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 const useLanguageSwitcher = () => {
-    const [language, setLanguage] = useState('us');
+  const [language, setLanguage] = useState("pt");
 
-    useEffect(() => {
-        const userPref = window.localStorage.getItem('language');
+  useEffect(() => {
+    const userPref = window.localStorage.getItem("language");
 
-        if (userPref) {
-            setLanguage(userPref);
-        } else {
-            const browserLanguage = navigator.language.split('-')[0];
-            setLanguage(browserLanguage);
-        }
-    }, []); 
+    if (userPref) {
+      setLanguage(userPref);
+    } else {
+      const browserLanguage = navigator.language.split("-")[0];
+      setLanguage(browserLanguage);
+    }
+  }, []);
 
-    useEffect(() => {
-        if (language) {
-            window.localStorage.setItem('language', language);
-        }
-    }, [language]); 
+  useEffect(() => {
+    if (language) {
+      window.localStorage.setItem("language", language);
+    }
+  }, [language]);
 
-    return [language, setLanguage];
+  return [language, setLanguage];
 };
 
 export default useLanguageSwitcher;
