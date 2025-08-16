@@ -113,6 +113,10 @@
   .qualification__button {
     margin: 0 0 var(--mb-0-75);
   }
+
+  .qualification__tabs {
+    gap: 1rem;
+  }
 }
 
 /* For small devices */

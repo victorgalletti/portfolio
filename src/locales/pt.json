@@ -3,24 +3,25 @@
     "home": "Início",
     "about": "Sobre mim",
     "skills": "Competências",
-    "services": "Serviços",
+    "services": "Serviços | Projetos",
     "portfolio": "Portfólio",
     "contact": "Contato"
   },
 
-  "data":{
+  "data": {
     "description": "Sou um desenvolvedor full stack com conhecimento em redes de computadores, entregando soluções completas com foco em confiabilidade e eficiência.",
     "talk": "Fale Comigo"
   },
 
-  "scroll":{
+  "scroll": {
     "down": "Rode para baixo"
   },
 
-  "about":{
+  "about": {
     "title": "Sobre Mim",
     "subtitle": "Introdução",
-    "description": "Desenvolvedor Full Stack com conhecimento em redes de computadores e experiência prática em JavaScript, TypeScript e React. Apaixonado por tecnologia, pronto para novos desafios!"
+    "description": "Desenvolvedor Full Stack com conhecimento em redes de computadores e experiência prática em JavaScript, TypeScript e React. Apaixonado por tecnologia, pronto para novos desafios!",
+    "cv": "Baixar Currículo"
   },
 
   "info": {
@@ -36,5 +37,126 @@
       "title": "Suporte",
       "subtitle": "Disponível 24/7"
     }
+  },
+
+  "services": {
+    "subtitle": "O que eu faço",
+    "viewMoreButton": "Ver Mais",
+    "service": {
+      "type": "Serviço",
+      "title1": "Montagem de",
+      "title2": "Computadores",
+      "modal": {
+        "title": "Montagem de computadores",
+        "description": "Serviço com mais de 3 anos de experiência. Fornecendo trabalho de qualidade para meus clientes.",
+        "features": [
+          "Montagem profissional de PCs sob medida para suas necessidades.",
+          "Limpeza completa para melhorar o desempenho e a longevidade.",
+          "Serviço no local com diagnóstico.",
+          "Orientação e orçamento personalizado para escolher os melhores componentes.",
+          "Suporte confiável para manter seu computador no seu melhor estado."
+        ]
+      }
+    },
+    "project": {
+      "type": "Projeto",
+      "status": "Em Andamento",
+      "title1": "SaaS",
+      "title2": "Clínica Médica",
+      "modal": {
+        "title": "SaaS Clínica Médica",
+        "description": "Projeto colaborativo com um amigo da faculdade, desenvolvendo um software para ser vendido a clínicas, projetado com múltiplos recursos para otimizar seu fluxo de trabalho e desempenho.",
+        "features": [
+          "Eu desenvolvi o modo escuro (darkmode).",
+          "Eu desenvolvi as páginas de Agenda/Tarefas.",
+          "Eu crei as interações dos elementos de UX.",
+          "Adicionei recursos de gerenciamento de agendamentos.",
+          "Otimizei o código, alcançando um desempenho melhor.",
+          {
+            "text": "Para mais informações, visite meu ",
+            "github": "GitHub"
+          }
+        ]
+      }
+    }
+  },
+
+  "sectionskills": {
+    "title": "Habilidades",
+    "subtitle": "Meu nível técnico"
+  },
+
+  "qualification": {
+    "section": {
+      "title": "Qualificação",
+      "subtitle": "Minha jornada pessoal"
+    },
+    "tabs": {
+      "education": "Educação",
+      "experience": "Experiências"
+    },
+    "education": [
+      {
+        "title": "Análise e Desenvolvimento de Sistemas",
+        "subtitle": "Brasília - Udf",
+        "date": "2022 - Julho 2025"
+      },
+      {
+        "title": "Redes de Computadores",
+        "subtitle": "Online - Alura",
+        "date": "2025 - Julho 2025"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Estágio",
+        "subtitle": "Ministério Público do Trabalho",
+        "date": "2024 - Nov 2024"
+      }
+    ]
+  },
+
+  "contact": {
+    "section": {
+      "title": "Entre em contato",
+      "subtitle": "Fale comigo"
+    },
+    "social": {
+      "title": "Mídia Social",
+      "linkedin": {
+        "title": "Linkedin",
+        "data": "Veja meu perfil para mais informações profissionais",
+        "button": "Clique aqui"
+      },
+      "email": {
+        "title": "Email",
+        "data": "victorsgallettiwk@gmail.com",
+        "button": "Escreva para mim"
+      }
+    },
+    "form": {
+      "title": "Interessado? Fale comigo",
+      "fields": {
+        "name": {
+          "label": "Nome",
+          "placeholder": "Digite seu nome"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "Digite seu email"
+        },
+        "message": {
+          "label": "Mensagem",
+          "placeholder": "Escreva para mim"
+        }
+      },
+      "button": "Enviar mensagem"
+    }
+  },
+
+  "footer": {
+    "about": "Sobre mim",
+    "certification": "Certificações",
+    "contact": "Contato"
   }
 }

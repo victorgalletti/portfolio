@@ -19,6 +19,7 @@ function App() {
       <main className="main">
         <Home />
         <About />
+        <Services />
         <Skills />
         <Qualification />
         <Contact />

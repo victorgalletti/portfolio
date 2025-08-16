@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import "./qualification.css";
 
 const Qualification = () => {
@@ -6,11 +7,13 @@ const Qualification = () => {
   const toggleTab = (index) => {
     setToggleState(index);
   };
+  const { t } = useTranslation();
+  const q = t("qualification", { returnObjects: true });
 
   return (
     <section className="qualification section" id="qualification">
-      <h2 className="section__title">Qualification</h2>
-      <span className="section__subtitle">My personal journey</span>
+      <h2 className="section__title">{q.section.title}</h2>
+      <span className="section__subtitle">{q.section.subtitle}</span>
 
       <div className="qualification__container container">
         <div className="qualification__tabs">
@@ -23,7 +26,7 @@ const Qualification = () => {
             onClick={() => toggleTab(1)}
           >
             <i className="uil uil-graduation-cap qualification__icon"></i>
-            Education
+            {q.tabs.education}
           </div>
 
           <div
@@ -35,7 +38,7 @@ const Qualification = () => {
             onClick={() => toggleTab(2)}
           >
             <i className="uil uil-briefcase-alt qualification__icon"></i>
-            Experience
+            {q.tabs.experience}
           </div>
         </div>
 
@@ -52,12 +55,12 @@ const Qualification = () => {
             {/* Content 1*/}
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">
-                  Análise e Desenvolvimento de Sistemas
-                </h3>
-                <span className="qualification__subtitle">Brasília - Udf</span>
+                <h3 className="qualification__title">{q.education[0].title}</h3>
+                <span className="qualification__subtitle">
+                  {q.education[0].subtitle}
+                </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> 2022 - Present
+                  <i className="uil uil-calendar-alt"></i> {q.education[0].date}
                 </div>
               </div>
 
@@ -77,17 +80,19 @@ const Qualification = () => {
               </div>
 
               <div>
-                <h3 className="qualification__title">Computer Networks</h3>
-                <span className="qualification__subtitle">Online - Alura</span>
+                <h3 className="qualification__title">{q.education[1].title}</h3>
+                <span className="qualification__subtitle">
+                  {q.education[1].subtitle}
+                </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> 2022 - Present
+                  <i className="uil uil-calendar-alt"></i> {q.education[1].date}
                 </div>
               </div>
             </div>
 
             {/* Qualification data 3*/}
 
-            <div className="qualification__data">
+            {/* <div className="qualification__data">
               <div>
                 <h3 className="qualification__title">Modify</h3>
                 <span className="qualification__subtitle">Brasília - Udf</span>
@@ -100,11 +105,11 @@ const Qualification = () => {
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line"></span>
               </div>
-            </div>
+            </div> */}
 
             {/* Qualification data 4*/}
 
-            <div className="qualification__data">
+            {/* <div className="qualification__data">
               <div></div>
               <div>
                 <span className="qualification__rounder"></span>
@@ -118,7 +123,7 @@ const Qualification = () => {
                   <i className="uil uil-calendar-alt"></i> 2022 - Present
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/* Qualification data finish content 1 */}
           </div>
@@ -135,10 +140,15 @@ const Qualification = () => {
             {/* Qualification data 5*/}
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">teste</h3>
-                <span className="qualification__subtitle">Brasília - Udf</span>
+                <h3 className="qualification__title">
+                  {q.experience[0].title}
+                </h3>
+                <span className="qualification__subtitle">
+                  {q.experience[0].subtitle}
+                </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> 2022 - Present
+                  <i className="uil uil-calendar-alt"></i>{" "}
+                  {q.experience[0].date}
                 </div>
               </div>
 
@@ -150,7 +160,7 @@ const Qualification = () => {
 
             {/* Qualification data 6*/}
 
-            <div className="qualification__data">
+            {/* <div className="qualification__data">
               <div></div>
               <div>
                 <span className="qualification__rounder"></span>
@@ -164,11 +174,11 @@ const Qualification = () => {
                   <i className="uil uil-calendar-alt"></i> 2022 - Present
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/* Qualification data 7*/}
 
-            <div className="qualification__data">
+            {/* <div className="qualification__data">
               <div>
                 <h3 className="qualification__title">Modify...</h3>
                 <span className="qualification__subtitle">Brasília - Udf</span>
@@ -181,11 +191,11 @@ const Qualification = () => {
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line"></span>
               </div>
-            </div>
+            </div> */}
 
             {/* Qualification data 8*/}
 
-            <div className="qualification__data">
+            {/* <div className="qualification__data">
               <div></div>
               <div>
                 <span className="qualification__rounder"></span>
@@ -199,7 +209,7 @@ const Qualification = () => {
                   <i className="uil uil-calendar-alt"></i> 2022 - Present
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/* Qualification data finish content 2*/}
           </div>

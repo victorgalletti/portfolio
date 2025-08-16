@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
 import { Gmail32, LSquareBlack } from "../icons/Icons";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
   const form = useRef();
@@ -14,14 +15,16 @@ const Contact = () => {
     });
     e.target.reset();
   };
+
+  const { t } = useTranslation();
   return (
     <section className="contact section" id="contact">
-      <h2 className="section__title">Get in touch</h2>
-      <span className="section__subtitle">Contact Me</span>
+      <h2 className="section__title">{t("contact.section.title")}</h2>
+      <span className="section__subtitle">{t("contact.section.subtitle")}</span>
 
       <div className="contact__container container grid">
         <div className="contact__content">
-          <h3 className="contact__title">Social Media</h3>
+          <h3 className="contact__title">{t("contact.social.title")}</h3>
 
           <div className="contact__info">
             <div className="contact__card">
@@ -29,11 +32,15 @@ const Contact = () => {
                 <LSquareBlack />
               </i>
 
-              <h3 className="contact__card-title">Linkedin</h3>
-              <span className="contact__card-data">See my profile</span>
+              <h3 className="contact__card-title">
+                {t("contact.social.linkedin.title")}
+              </h3>
+              <span className="contact__card-data">
+                {t("contact.social.linkedin.data")}
+              </span>
 
               <a href="" className="contact__button">
-                Click here{" "}
+                {t("contact.social.linkedin.button")}{" "}
                 <i className="bx bx-arrow-right-stroke contact__button-icon"></i>
               </a>
             </div>
@@ -43,16 +50,18 @@ const Contact = () => {
                 <Gmail32 />
               </i>
 
-              <h3 className="contact__card-title">Email</h3>
+              <h3 className="contact__card-title">
+                {t("contact.social.email.title")}
+              </h3>
               <span className="contact__card-data">
-                victorsgallettiwk@gmail.com
+                {t("contact.social.email.data")}
               </span>
 
               <a
                 href="mailto:victors.galletti@gmail.com"
                 className="contact__button"
               >
-                Write me{" "}
+                {t("contact.social.email.button")}{" "}
                 <i className="bx bx-arrow-right-stroke contact__button-icon"></i>
               </a>
             </div>
@@ -60,41 +69,47 @@ const Contact = () => {
         </div>
 
         <div className="contact__content">
-          <h3 className="contact__title">Interested? Contact me</h3>
+          <h3 className="contact__title">{t("contact.form.title")}</h3>
 
           <form ref={form} onSubmit={sendEmail} className="contact__form">
             <div className="contact__form-div">
-              <label className="contact__form-tag">Name</label>
+              <label className="contact__form-tag">
+                {t("contact.form.fields.name.label")}
+              </label>
               <input
                 type="text"
                 name="name"
                 className="contact__form-input"
-                placeholder="Insert your name"
+                placeholder={t("contact.form.fields.name.placeholder")}
               />
             </div>
 
             <div className="contact__form-div">
-              <label className="contact__form-tag">Email</label>
+              <label className="contact__form-tag">
+                {t("contact.form.fields.email.label")}
+              </label>
               <input
                 type="email"
                 name="email"
                 className="contact__form-input"
-                placeholder="Insert your email"
+                placeholder={t("contact.form.fields.email.placeholder")}
               />
             </div>
 
             <div className="contact__form-div contact__form-area">
-              <label className="contact__form-tag">Message</label>
+              <label className="contact__form-tag">
+                {t("contact.form.fields.message.label")}
+              </label>
               <textarea
                 name="message"
                 cols="30"
                 rows="10"
                 className="contact__form-input"
-                placeholder="Write me"
+                placeholder={t("contact.form.fields.message.placeholder")}
               ></textarea>
             </div>
             <button className="button button--flex">
-              Send Message
+              {t("contact.form.button")}
               <svg
                 class="button__icon"
                 xmlns="http://www.w3.org/2000/svg"

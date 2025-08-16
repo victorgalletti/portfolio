@@ -3,24 +3,25 @@
     "home": "Home",
     "about": "About",
     "skills": "Skills",
-    "services": "Services",
+    "services": "Services | Projects",
     "portfolio": "Portfolio",
     "contact": "Contact"
   },
 
-  "data":{
+  "data": {
     "description": "I'm Full Stack Developer with a background in computer networks, delivering end-to-end solutions with a focus on reliability and efficiency.",
     "talk": "Say Hello"
   },
 
-  "scroll":{
+  "scroll": {
     "down": "Scroll Down"
   },
 
-  "about":{
+  "about": {
     "title": "About Me",
     "subtitle": "My Introduction",
-    "description": "Full Stack developer with knowledge of computer networks and practical experience in JavaScript, TypeScript, and React. Passionate about technology and ready for new challenges!"
+    "description": "Full Stack developer with knowledge of computer networks and practical experience in JavaScript, TypeScript, and React. Passionate about technology and ready for new challenges!",
+    "cv": "Download CV"
   },
 
   "info": {
@@ -36,5 +37,127 @@
       "title": "Support",
       "subtitle": "Online 24/7"
     }
+  },
+
+  "services": {
+    "subtitle": "What I do",
+    "service": {
+      "type": "Service",
+      "title1": "Computer",
+      "title2": "technician",
+      "viewMoreButton": "View More",
+      "modal": {
+        "title": "Computer technician",
+        "description": "Service with more than 3 years of experience. Providing quality work to my clients.",
+        "features": [
+          "Professional PC assembly tailored to your requirements.",
+          "Thorough cleaning to improve performance and longevity.",
+          "On-site service with transparent diagnostics and budgeting.",
+          "Personalized guidance to choose the best components for your needs.",
+          "Reliable support to keep your computer running at its best."
+        ]
+      }
+    },
+    "project": {
+      "type": "Project",
+      "status": "Work In Progress",
+      "title1": "SaaS",
+      "title2": "Medical Clinic",
+      "viewMoreButton": "View More",
+      "modal": {
+        "title": "SaaS Medical Clinic",
+        "description": "Collaborative project with a college friend, developing software to be sold to clinics, designed with multiple features to optimize their workflow and performance.",
+        "features": [
+          "I develop the darkmode",
+          "I develop Calendar/Task pages.",
+          "I create ux element interactions.",
+          "I added scheduling management features to improve workflow and efficiency.",
+          "I optimized the code, achieving lightning-fast performance with processing and loading times reduced to just 1 second.",
+          {
+            "text": "For more information, visit my ",
+            "github": "GitHub"
+          }
+        ]
+      }
+    }
+  },
+
+  "sectionskills": {
+    "title": "Skills",
+    "subtitle": "My technical level"
+  },
+
+  "qualification": {
+    "section": {
+      "title": "Qualification",
+      "subtitle": "My personal journey"
+    },
+    "tabs": {
+      "education": "Education",
+      "experience": "Experience"
+    },
+    "education": [
+      {
+        "title": "Análise e Desenvolvimento de Sistemas",
+        "subtitle": "Brasília - Udf",
+        "date": "2022 - July 2025"
+      },
+      {
+        "title": "Computer Networks",
+        "subtitle": "Online - Alura",
+        "date": "2025 - July 2025"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Internship",
+        "subtitle": "Ministério Público do Trabalho",
+        "date": "2024 - Nov 2024"
+      }
+    ]
+  },
+
+  "contact": {
+    "section": {
+      "title": "Get in touch",
+      "subtitle": "Contact Me"
+    },
+    "social": {
+      "title": "Social Media",
+      "linkedin": {
+        "title": "Linkedin",
+        "data": "See my profile for more professional information",
+        "button": "Click here"
+      },
+      "email": {
+        "title": "Email",
+        "data": "victorsgallettiwk@gmail.com",
+        "button": "Write me"
+      }
+    },
+    "form": {
+      "title": "Interested? Contact me",
+      "fields": {
+        "name": {
+          "label": "Name",
+          "placeholder": "Insert your name"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "Insert your email"
+        },
+        "message": {
+          "label": "Message",
+          "placeholder": "Write me"
+        }
+      },
+      "button": "Send Message"
+    }
+  },
+
+  "footer": {
+    "about": "About",
+    "certification": "Certifications",
+    "contact": "Contact"
   }
 }
