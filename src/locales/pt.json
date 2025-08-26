@@ -151,6 +151,16 @@
         }
       },
       "button": "Enviar mensagem"
+    },
+    "notification": {
+      "success": {
+        "title": "Mensagem enviada com sucesso!",
+        "message": "Obrigado por sua mensagem. Retornarei em breve."
+      },
+      "error": {
+        "title": "Erro ao enviar mensagem",
+        "message": "Houve um erro ao enviar sua mensagem. Tente novamente."
+      }
     }
   },
 

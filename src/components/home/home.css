@@ -44,7 +44,7 @@
 }
 
 .home__subtitle::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 70px;
   height: 1px;
@@ -59,7 +59,7 @@
 }
 
 .home__img {
-  background-image: url('../../assets/profiledark.png');
+  background-image: url("../../assets/profile.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -72,7 +72,7 @@
 }
 
 .dark .home__img {
-  background-image: url('../../assets/profile.png'); /* escuro */
+  background-image: url("../../assets/profile.png"); /* escuro */
 }
 
 @keyframes profile__animate {

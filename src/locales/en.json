@@ -152,6 +152,16 @@
         }
       },
       "button": "Send Message"
+    },
+    "notification": {
+      "success": {
+        "title": "Message sent successfully!",
+        "message": "Thank you for your message. I'll get back to you soon."
+      },
+      "error": {
+        "title": "Error sending message",
+        "message": "There was an error sending your message. Please try again."
+      }
     }
   },
 

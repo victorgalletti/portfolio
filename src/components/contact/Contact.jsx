@@ -1,22 +1,62 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
 import { Gmail32, LSquareBlack } from "../icons/Icons";
 import { useTranslation } from "react-i18next";
+import Notification from "../notification/Notification";
 
 const Contact = () => {
   const form = useRef();
+  const { t } = useTranslation();
+  const [notification, setNotification] = useState({
+    isVisible: false,
+    type: "success",
+    title: "",
+    message: "",
+  });
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm("service_equnw9a", "template_ic4zv9p", form.current, {
-      publicKey: "2ndCzOIRrQL-FXhYN",
-    });
-    e.target.reset();
+    emailjs
+      .sendForm("service_equnw9a", "template_ic4zv9p", form.current, {
+        publicKey: "2ndCzOIRrQL-FXhYN",
+      })
+      .then((result) => {
+        // Sucesso
+        setNotification({
+          isVisible: true,
+          type: "success",
+          title: t("contact.notification.success.title"),
+          message: t("contact.notification.success.message"),
+        });
+        e.target.reset();
+
+        // Auto-hide after 5 seconds
+        setTimeout(() => {
+          setNotification((prev) => ({ ...prev, isVisible: false }));
+        }, 5000);
+      })
+      .catch((error) => {
+        // Erro
+        setNotification({
+          isVisible: true,
+          type: "error",
+          title: t("contact.notification.error.title"),
+          message: t("contact.notification.error.message"),
+        });
+
+        // Auto-hide after 5 seconds
+        setTimeout(() => {
+          setNotification((prev) => ({ ...prev, isVisible: false }));
+        }, 5000);
+      });
   };
 
-  const { t } = useTranslation();
+  const closeNotification = () => {
+    setNotification((prev) => ({ ...prev, isVisible: false }));
+  };
+
   return (
     <section className="contact section" id="contact">
       <h2 className="section__title">{t("contact.section.title")}</h2>
@@ -131,6 +171,14 @@ const Contact = () => {
           </form>
         </div>
       </div>
+
+      <Notification
+        isVisible={notification.isVisible}
+        type={notification.type}
+        title={notification.title}
+        message={notification.message}
+        onClose={closeNotification}
+      />
     </section>
   );
 };
